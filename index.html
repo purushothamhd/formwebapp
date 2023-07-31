@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Purushotham H D</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+@font-face {
+  font-family: "majufonts";
+  src: url(fonts/foobar.otf);
+}
+@font-face{
+  font-family: "nexa";
+  src: url(fonts/logger.ttf);
+}
+@font-face {
+  font-family: "normalfont";
+  src: url(fonts/opensans.ttf);
+}
+@font-face {
+  font-family: "uburegu";
+  src: url(fonts/uburegu.ttf);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #125cbd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #62c3fc;
+}
+h3 {
+  text-align: center;
+  font-family: "majufonts";
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+  padding: 40px;
+  background: linear-gradient(45deg,rgb(255, 255, 196),rgb(205, 255, 205),rgb(200, 200, 255),rgb(255, 184, 240));
+  border-radius: 30px;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+.designedby{
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(45deg, rgb(241, 241, 179),rgb(199, 250, 250), rgb(215, 174, 243))
+}
+.image{
+width:auto;
+height: auto;
+max-width: 120px;
+max-height: 120px;
+position: static;
+bottom: 63px;
+left: 190px;
+float: left;
+}
+.betaboys{
+  font-size: 45px;
+  font-family: "nexa";
+  font-weight: lighter;
+}
+li {
+  padding: 5px 2px 5px 4px;
+  background-color: rgb(231, 252, 253);
+  border-radius: 25px;
+  font-family:"normalfont" ;
+  font-style: oblique;
+}
+</style>
+</head>
+<body>
+  <img class="image" src="Betaboys.jpg" alt="[Beta Boys]">
+<h3>Feedback form for <span class="betaboys">[Alpha boys]</span> seminar.</h3>
+<br><br>
+<div class="container">
+  <form action="/action_page.php" method="post">
+    <label for="name">Please Enter your name</label>
+    <input type="text" id="name" name="Name" required placeholder="Your name...">
+
+    <label for="email">Enter your E-mail ID</label>
+    <input type="email" id="email" name="Email" required placeholder="Your mail ID...">
+
+
+    <label for="member">Please select a member</label>
+    <select id="member" name="Member">
+      <option value="Overall">Overall</option>
+      <option value="B R Adithya">B R Adithya</option>
+      <option value="Raksha Aravind">Raksha Aravind</option>
+      <option value="Mohammed Zaid Khan">Mohammed Zaid Khan</option>
+      <option value="Hemanth">Hemanth</option>
+    </select>
+    <label for="rating">rating:</label>
+    <input type="range" id="rating" name="rating" min="0" max="5">  <br><br><br>
+    
+    <label for="subject">Feedback</label>
+    <textarea id="subject" name="subject" required placeholder="Please feel free to write your detailed feedback here" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<br>
+<div class="update">
+  <details>
+    <summary>Update v2.6 <span style="background-color: rgb(90, 19, 1); border-radius: 8px; color: white;">
+      &nbsp; &nbsp;What's new?&nbsp;&nbsp; </span></summary>
+    <ul>
+      <li>Updated to modern UI design</li>
+      <li>Fixed minor bugs in backend scripts</li>
+      <li>data is now encrypted & secure with SSL encryption</li>
+    </ul>
+  </details>
+</div>
+<br>
+<div class="designedby">
+<br> <br>
+<details>
+  <summary>Designed & developed by</summary>
+  <p><span style="padding: 4px; background: linear-gradient(270deg,rgb(207, 255, 235),rgb(252, 255, 212),rgb(239, 253, 255),rgb(255, 245, 240));
+   border: solid 1.5px rgb(90, 85, 85); border-radius: 10px 0 10px 0; font-weight: bold;">
+    <span style="font-family:'uburegu'; font-size: 16px;">Purushotham H D</span>, Rohan & Team 'Beta Boys'</span><br><br>
+    <span style=>[ 1st year CSE students @GEC Hassan ] </span></p>
+</details>
+<br>
+<details>
+<summary>Contact Developer:</summary>
+  <a href="mailto:purushothamhd.in@gmail.com">Purushothamhd.in@gmail.com</a>
+</details>
+</div>
+</body>
+</html>
